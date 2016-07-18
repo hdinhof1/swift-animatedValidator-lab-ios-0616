@@ -12,7 +12,7 @@ import Quick
 import KIF
 @testable import animated_validator_swift
 
-class ValidatorViewController: QuickSpec {
+class AnimatedValidatorSwiftTests: QuickSpec {
      //SpecBegin(ValidatorViewController)
     override func spec() {
         

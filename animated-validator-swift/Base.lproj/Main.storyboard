@@ -8,7 +8,7 @@
         <!--Validator View Controller-->
         <scene sceneID="fxB-yy-ojW">
             <objects>
-                <viewController id="ecQ-MV-S0N" customClass="ValidatorViewController" customModule="animated_validator_swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ecQ-MV-S0N" customClass="ValidatorViewController" customModule="animated_validator_swift" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CvT-dt-zkU"/>
                         <viewControllerLayoutGuide type="bottom" id="lLl-mp-b9a"/>
@@ -17,37 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YfI-CE-YJy">
-                                <rect key="frame" x="200" y="35" width="200" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aC6-8m-vL4">
-                                <rect key="frame" x="200" y="73" width="200" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tEJ-pc-xDi">
-                                <rect key="frame" x="200" y="111" width="200" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KcG-7x-K13">
-                                <rect key="frame" x="200" y="149" width="200" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7B-3x-PEh">
-                                <rect key="frame" x="200" y="187" width="200" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIu-8E-4Lm">
-                                <rect key="frame" x="277" y="535" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIu-8E-4Lm">
+                                <rect key="frame" x="277" y="400" width="47" height="30"/>
                                 <state key="normal" title="submit"/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OZ3-bV-7gl">
+                                <rect key="frame" x="232" y="40" width="137" height="190"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YfI-CE-YJy">
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="emailEntered:" destination="ecQ-MV-S0N" eventType="editingDidEnd" id="z2g-Fj-bbK"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aC6-8m-vL4">
+                                        <rect key="frame" x="0.0" y="40" width="137" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="confirmEmailFieldEntered:" destination="ecQ-MV-S0N" eventType="editingDidEnd" id="99a-Re-2QJ"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tEJ-pc-xDi">
+                                        <rect key="frame" x="0.0" y="80" width="137" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="phoneNumberEntered:" destination="ecQ-MV-S0N" eventType="editingDidEnd" id="L9Z-bn-HpN"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KcG-7x-K13">
+                                        <rect key="frame" x="0.0" y="120" width="137" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="passwordEntered:" destination="ecQ-MV-S0N" eventType="editingDidEnd" id="tnk-nf-5Yc"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7B-3x-PEh">
+                                        <rect key="frame" x="0.0" y="160" width="137" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="confirmPasswordFieldEntered:" destination="ecQ-MV-S0N" eventType="editingDidEnd" id="Iif-Lk-3DR"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JIu-8E-4Lm" firstAttribute="centerX" secondItem="zbB-f3-2Tu" secondAttribute="centerX" id="6zn-o4-84u"/>
+                            <constraint firstItem="JIu-8E-4Lm" firstAttribute="bottom" secondItem="V7B-3x-PEh" secondAttribute="bottom" constant="200" id="CqL-nf-hSp"/>
+                            <constraint firstItem="OZ3-bV-7gl" firstAttribute="centerX" secondItem="zbB-f3-2Tu" secondAttribute="centerX" id="a1K-l9-y25"/>
+                            <constraint firstItem="OZ3-bV-7gl" firstAttribute="top" secondItem="CvT-dt-zkU" secondAttribute="bottom" constant="20" id="k4s-PT-ZgO"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="emailConfirmationTextField" destination="aC6-8m-vL4" id="OmL-s6-qeF"/>
@@ -56,6 +82,7 @@
                         <outlet property="passwordTextField" destination="KcG-7x-K13" id="npk-nE-wM1"/>
                         <outlet property="phoneTextField" destination="tEJ-pc-xDi" id="sHX-8P-NzR"/>
                         <outlet property="submitButton" destination="JIu-8E-4Lm" id="XFa-Fq-CX4"/>
+                        <outletCollection property="userEntryFields" destination="V7B-3x-PEh" collectionClass="NSMutableArray" id="8Rz-GE-YEZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gcf-lb-B9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>

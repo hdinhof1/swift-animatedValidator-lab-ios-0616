@@ -61,6 +61,7 @@
 		86D506C47CB98E80EAEEBF92 /* Pods_animated_validator_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animated_validator_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0BDFC06A5EE781C104670E /* Pods-animated-validator-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animated-validator-swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-animated-validator-swiftTests/Pods-animated-validator-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		970BF69A64829DBB0AA9760A /* Pods-animated-validator-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animated-validator-swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-animated-validator-swiftTests/Pods-animated-validator-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA24A8C91D396F920047512E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble/Nimble.framework"; sourceTree = "<group>"; };
 		D26BDFD20D9E704B03E90A1B /* Pods-animated-validator-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animated-validator-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-animated-validator-swift/Pods-animated-validator-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E68667BCBEDC6B1DF663113C /* Pods_animated_validator_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animated_validator_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -164,6 +165,7 @@
 		A3EFB1EA72B8BA7DEA215FFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA24A8C91D396F920047512E /* Nimble.framework */,
 				E68667BCBEDC6B1DF663113C /* Pods_animated_validator_swift.framework */,
 				4C122119BECAA60CD1470309 /* Pods_animated_validator_swiftTests.framework */,
 				86D506C47CB98E80EAEEBF92 /* Pods_animated_validator_swiftUITests.framework */,
@@ -178,12 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B136C261D216FBD004DC0F3 /* Build configuration list for PBXNativeTarget "animated-validator-swift" */;
 			buildPhases = (
-				C970BDBD5D441E72716FDE22 /* 📦 Check Pods Manifest.lock */,
+				C970BDBD5D441E72716FDE22 /* [CP] Check Pods Manifest.lock */,
 				1B136BFA1D216FBD004DC0F3 /* Sources */,
 				1B136BFB1D216FBD004DC0F3 /* Frameworks */,
 				1B136BFC1D216FBD004DC0F3 /* Resources */,
-				DBEEFD50978E8DF3FEA4C2D3 /* 📦 Embed Pods Frameworks */,
-				F17CD3BBACA874860B6A5DC3 /* 📦 Copy Pods Resources */,
+				DBEEFD50978E8DF3FEA4C2D3 /* [CP] Embed Pods Frameworks */,
+				F17CD3BBACA874860B6A5DC3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,12 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B136C291D216FBD004DC0F3 /* Build configuration list for PBXNativeTarget "animated-validator-swiftTests" */;
 			buildPhases = (
-				AB4CFEC0095281FB507C0D5C /* 📦 Check Pods Manifest.lock */,
+				AB4CFEC0095281FB507C0D5C /* [CP] Check Pods Manifest.lock */,
 				1B136C0E1D216FBD004DC0F3 /* Sources */,
 				1B136C0F1D216FBD004DC0F3 /* Frameworks */,
 				1B136C101D216FBD004DC0F3 /* Resources */,
-				ED456CBA8135FC278BBDC530 /* 📦 Embed Pods Frameworks */,
-				B62ED848D175F50DDC3F997C /* 📦 Copy Pods Resources */,
+				ED456CBA8135FC278BBDC530 /* [CP] Embed Pods Frameworks */,
+				B62ED848D175F50DDC3F997C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,11 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B136C2C1D216FBD004DC0F3 /* Build configuration list for PBXNativeTarget "animated-validator-swiftUITests" */;
 			buildPhases = (
-				F6AB27D091FA8ABAE66CC34D /* 📦 Check Pods Manifest.lock */,
+				F6AB27D091FA8ABAE66CC34D /* [CP] Check Pods Manifest.lock */,
 				1B136C191D216FBD004DC0F3 /* Sources */,
 				1B136C1A1D216FBD004DC0F3 /* Frameworks */,
 				1B136C1B1D216FBD004DC0F3 /* Resources */,
-				3C0740508B180694FE61D255 /* 📦 Copy Pods Resources */,
+				3C0740508B180694FE61D255 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,14 +308,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C0740508B180694FE61D255 /* 📦 Copy Pods Resources */ = {
+		3C0740508B180694FE61D255 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,14 +323,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swiftUITests/Pods-animated-validator-swiftUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AB4CFEC0095281FB507C0D5C /* 📦 Check Pods Manifest.lock */ = {
+		AB4CFEC0095281FB507C0D5C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,14 +338,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B62ED848D175F50DDC3F997C /* 📦 Copy Pods Resources */ = {
+		B62ED848D175F50DDC3F997C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,14 +353,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swiftTests/Pods-animated-validator-swiftTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C970BDBD5D441E72716FDE22 /* 📦 Check Pods Manifest.lock */ = {
+		C970BDBD5D441E72716FDE22 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,14 +368,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DBEEFD50978E8DF3FEA4C2D3 /* 📦 Embed Pods Frameworks */ = {
+		DBEEFD50978E8DF3FEA4C2D3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,14 +383,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swift/Pods-animated-validator-swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED456CBA8135FC278BBDC530 /* 📦 Embed Pods Frameworks */ = {
+		ED456CBA8135FC278BBDC530 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,14 +398,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swiftTests/Pods-animated-validator-swiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F17CD3BBACA874860B6A5DC3 /* 📦 Copy Pods Resources */ = {
+		F17CD3BBACA874860B6A5DC3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,14 +413,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swift/Pods-animated-validator-swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6AB27D091FA8ABAE66CC34D /* 📦 Check Pods Manifest.lock */ = {
+		F6AB27D091FA8ABAE66CC34D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,6 +583,10 @@
 			baseConfigurationReference = D26BDFD20D9E704B03E90A1B /* Pods-animated-validator-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Nimble",
+				);
 				INFOPLIST_FILE = "animated-validator-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.animated-validator-swift";
@@ -594,6 +600,10 @@
 			baseConfigurationReference = 2BB9E8D93029FBCC28F0A37A /* Pods-animated-validator-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Nimble",
+				);
 				INFOPLIST_FILE = "animated-validator-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.animated-validator-swift";
