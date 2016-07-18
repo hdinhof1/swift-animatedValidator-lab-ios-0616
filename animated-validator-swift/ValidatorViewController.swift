@@ -41,6 +41,7 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
                 
                 if hasAtSign && hasAPeriod {
                     //is good!
+                    self.emailTextField.backgroundColor = UIColor.whiteColor()
                 }else {
                     //bad
                     makeInvalidTextFieldPulse(self.emailTextField)
@@ -51,10 +52,12 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
     }
     @IBAction func confirmEmailFieldEntered(sender: AnyObject) {
         guard let emailText = self.emailTextField.text else { return }
-        guard let emailConfirmText = self.emailTextField.text else {return }
+        guard let emailConfirmText = self.emailConfirmationTextField.text else {return }
         
         if emailText == emailConfirmText {
             //good
+            self.emailConfirmationTextField.backgroundColor = UIColor.whiteColor()
+             
         }else {
             //bad
             makeInvalidTextFieldPulse(self.emailConfirmationTextField)
@@ -68,6 +71,8 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
         if let isOnlyNumbers = phoneNumber.isStringANumber() {
             if hasAtLeastSixCharacters && isOnlyNumbers {
                 //good
+                self.phoneTextField.backgroundColor = UIColor.whiteColor()
+                 
             }else {
                 //bad
                 makeInvalidTextFieldPulse(self.phoneTextField)
@@ -78,6 +83,8 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
         guard let passwordText = self.passwordTextField.text else { return }
         if passwordText.characters.count >= 6 {
             //good
+            self.passwordTextField.backgroundColor = UIColor.whiteColor()
+             
         }else {
             //bad
             makeInvalidTextFieldPulse(self.passwordTextField)
@@ -88,6 +95,7 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
         guard let confirmPassword = passwordConfirmTextField.text else { return }
         if passwordText == confirmPassword {
             //good
+            self.passwordConfirmTextField.backgroundColor = UIColor.whiteColor()
             if isAllUserInputCorrect() {
                 self.submitButton.enabled = true
             }
